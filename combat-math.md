@@ -85,3 +85,123 @@ Hooded Men
 - When Adventurer survives, they're left with an average of 0.72 HP and  9.45 STR
 
 
+<details closed markdown="block">
+<summary>Psst, you wanna see some janky code?</summary>
+```python
+import random
+import math
+
+
+
+#%% Create some dudes
+
+class Actor(object):
+    Name = None
+    HP = 0
+    STR = 0
+    Armor = 0
+    Attack = 0
+    Alive = True
+
+    # The class "constructor" - It's actually an initializer 
+    def __init__(self, Name, HP,STR,Armor,Attack):
+        self.Name = Name
+        self.HP = HP
+        self.STR = STR
+        self.Armor = Armor
+        self.Attack = Attack
+
+def make_actor(Name,HP,STR,Armor,Attack):
+    actor = Actor(Name,HP,STR,Armor,Attack)
+    return actor
+
+#%%
+
+adventurerStats = ["Adventurer",4,12,2,8]    
+bearStats = ["Bear",6,15,0,8]  
+goblinStats = ["Goblin",4,8,0,6]
+cultistStats = ["Hooded Man",12,9,0,8]
+
+#%%
+
+def runTrial(stats0,stats1):    
+    actor0 = make_actor(*stats0)
+    actor1 = make_actor(*stats1)
+    actors = [actor0,actor1]
+    
+    
+    turns = [([actor0.Name,actor0.HP,actor0.STR,actor0.Alive,],[actor1.Name,actor1.HP,actor1.STR,actor1.Alive,])]
+    
+    #startingActor = random.randrange(2)
+    startingActor = 0 #deterministic
+    activeActor = actors[startingActor]
+    otherActor = actors[1-startingActor]
+    
+    #print("First attack by ",activeActor.Name)
+    
+    while actor0.Alive and actor1.Alive:
+        damage = random.randrange(activeActor.Attack) + 1 - otherActor.Armor
+        damage = max(0,damage) #Don't want a weak attack to heal the target
+        otherActor.HP -= damage
+        if otherActor.HP < 0:
+            otherActor.STR += otherActor.HP
+            otherActor.HP = 0
+            if otherActor.STR <= 0:
+                otherActor.Alive = False
+            else:
+                STRsave = random.randrange(20)+1
+                if STRsave > otherActor.STR:
+                    otherActor.Alive = False
+                      
+        turns.append(([actor0.Name,actor0.HP,actor0.STR,actor0.Alive,],[actor1.Name,actor1.HP,actor1.STR,actor1.Alive,]))
+        
+        #switcheroo
+        _ = activeActor
+        activeActor = otherActor
+        otherActor = _
+    
+    return actor0,actor1, turns
+        
+#results = runTrial(adventurerStats,bearStats,)
+    
+#%% Run 1000 trials and print results
+    
+numTrials = 1000000
+stats0 = cultistStats
+stats1 = adventurerStats
+
+trialRecords = []
+
+for _ in range(numTrials):
+    results = runTrial(stats0,stats1,)
+    trialRecords.append(results)
+
+agent0WinPercent = sum([record[0].Alive for record in trialRecords])/numTrials
+print(stats0[0], "win rate:", "%.2f" % agent0WinPercent)
+
+avgNumberRounds = sum([math.ceil(len(record[2])/2) for record in trialRecords])/numTrials
+print("Average number of rounds:", "%.2f" % avgNumberRounds)
+
+avgRemainingHP0 = 0
+avgRemainingSTR0 = 0
+avgRemainingHP1 = 0
+avgRemainingSTR1 = 0
+for record in trialRecords:
+    if record[0].Alive:
+        avgRemainingHP0 += record[0].HP
+        avgRemainingSTR0 += record[0].STR
+    elif record[1].Alive:
+        avgRemainingHP1 += record[1].HP
+        avgRemainingSTR1 += record[1].STR
+        
+avgRemainingHP0 = avgRemainingHP0 / sum([record[0].Alive for record in trialRecords])
+avgRemainingSTR0 = avgRemainingSTR0 / sum([record[0].Alive for record in trialRecords])
+avgRemainingHP1 = avgRemainingHP1 / sum([record[1].Alive for record in trialRecords])
+avgRemainingSTR1 = avgRemainingSTR1 / sum([record[1].Alive for record in trialRecords])
+    
+print("When",stats0[0],"survives, they're left with an average of", "%.2f" % avgRemainingHP0,"HP and ","%.2f" % avgRemainingSTR0,"STR")
+print("When",stats1[0],"survives, they're left with an average of","%.2f" % avgRemainingHP1,"HP and ","%.2f" % avgRemainingSTR1,"STR")
+        
+```
+</details>
+
