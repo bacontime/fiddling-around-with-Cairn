@@ -16,6 +16,12 @@ nav_order: 2
 </style>
 
 
+⌑¤💥🌟⭐⚔️🗡️†    
+:skull: 💀☠ ☠️    
+⛨🔰🛡️🛡⩌
+  
+
+
 # Cairn System Reference Document (v.1.0)
 
 <p></p>
