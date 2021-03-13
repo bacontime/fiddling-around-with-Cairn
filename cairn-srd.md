@@ -4,6 +4,18 @@ title: SRD
 nav_order: 2
 ---
 
+
+<style>
+@media print {
+  body {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+  }
+}
+</style>
+
+
 # Cairn System Reference Document (v.1.0)
 
 <p></p>
