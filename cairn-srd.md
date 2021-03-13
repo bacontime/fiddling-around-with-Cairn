@@ -189,8 +189,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Female Names
 
-|||||||||
-|------|-----------|-----------|-----------|----------|---------|------|----------|
+
 |1     | Agune     |6          |Drelil     |11        |Lirann   |16    |Sybil     |
 |2     | Beatrice  |7          |Elgile     |12        |Lirathil |17    |Theune    |
 |3     | Breagan   |8          |Esme       |13        |Lisabeth |18    |Wenain    |
@@ -200,8 +199,6 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Male Names
 
-|||||||||
-|------|-----------|-----------|-----------|----------|---------|------|----------|
 |1           |Arwel     |6          |Breglor    |11        |Grinwit  |16    |Melnax    |
 |2           |Bevan     |7          |Canhoreal  |12        |Gruwid   |17    |Orthax    |
 |3           |Boroth    |8          |Emrys      |13        |Gruwth   |18    |Triunein  |
@@ -210,8 +207,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Surnames
 
-|||||||||
-|------|-----------|-----------|-----------|----------|---------|------|----------|
+
 |1           |Abernathy |6          |Crumwaller |11        |Harper   |16    |Swinney   |
 |2           |Addercap  |7          |Dunswallow |12        |Loomer   |17    |Thatcher  |
 |3           |Burl      |8          |Getri      |13        |Malksmilk|18    |Tolmen    |
@@ -220,8 +216,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Background
 
-|||||||||
-|------|-----------|-----------|-----------|----------|---------|------|----------|
+
 |1           |Alchemist |6          |Cleric     |11        |Magician |16    |Performer |
 |2           |Blacksmith|7          |Gambler    |12        |Mercenary|17    |Pickpocket|
 |3           |Butcher   |8          |Gravedigger|13        |Merchant |18    |Smuggler  |
@@ -234,8 +229,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Physique
 
-|  |          |      |            |
-| -------- | -------- | ---- | ---------- |
+
 | 1        | Athletic | 6    | Scrawny    |
 | 2        | Brawny   | 7    | Short      |
 | 3        | Flabby   | 8    | Statuesque |
@@ -244,8 +238,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Skin
 
-|  |            |      |           |
-| ---- | ---------- | ---- | --------- |
+
 | 1    | Birthmark  | 6    | Round     |
 | 2    | Dark       | 7    | Soft      |
 | 3    | Elongated  | 8    | Tanned    |
@@ -254,8 +247,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Hair
 
-|  |         |      |           |
-| ---- | ------- | ---- | --------- |
+
 | 1    | Bald    | 6    | Long      |
 | 2    | Braided | 7    | Luxurious |
 | 3    | Curly   | 8    | Oily      |
@@ -264,8 +256,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Face
 
-|  |           |      |          |
-| ---- | --------- | ---- | -------- |
+
 | 1    | Bony      | 6    | Perfect  |
 | 2    | Broken    | 7    | Rat-like |
 | 3    | Chiseled  | 8    | Sharp    |
@@ -274,8 +265,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Speech
 
-|  |         |      |            |
-| ------ | ------- | ---- | ---------- |
+
 | 1      | Blunt   | 6    | Gravelly   |
 | 2      | Booming | 7    | Precise    |
 | 3      | Cryptic | 8    | Squeaky    |
@@ -284,8 +274,6 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Clothing
 
-|  |         |      |        |
-| -------- | ------- | ---- | ------ |
 | 1        | Antique | 6    | Frayed |
 | 2        | Bloody  | 7    | Frumpy |
 | 3        | Elegant | 8    | Livery |
@@ -294,8 +282,7 @@ If you would like something closer to traditional classes, refer to the list of 
 
 #### Virtue
 
-|  |             |      |           |
-| ------ | ----------- | ---- | --------- |
+
 | 1      | Ambitious   | 6    | Honorable |
 | 2      | Cautious    | 7    | Humble    |
 | 3      | Courageous  | 8    | Merciful  |
