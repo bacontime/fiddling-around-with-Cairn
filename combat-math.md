@@ -17,6 +17,7 @@ nav_order: 103
 - 3d6 for STR (Let's say 11)
 - 1d6 starting HP (Let's call it 4)
 - Say 2 armor as baseline. (Chainmail or Brigadine+helmet, etc.)
+- Let's give em a sword for d8 damage
 
 
 ## Example Monster
@@ -32,6 +33,12 @@ Hooded Men
 
 
 ## Combat Simulation
+
+- The Pc and the monster just start wailing on each other.
+- Random who goes first.
+
+### Bear vs Standard Reference Adventurerer
+
 
 
 
