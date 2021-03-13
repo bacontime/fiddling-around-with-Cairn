@@ -2,7 +2,7 @@ title: "Cairn, but I'm messing around with it a bit."
 remote_theme: RMWinslow/just-the-docs-tweaked
 search_enabled: true
 
-logo: "/img/logo.png"
+#logo: "/img/logo.png"
 
 
 gh_edit_link: false  # show or hide edit this page link
