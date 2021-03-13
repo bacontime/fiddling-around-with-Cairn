@@ -1,7 +1,13 @@
-title: Cairn
-remote_theme: pmarsceill/just-the-docs
-url: https://cairnrpg.com
+title: "Cairn, but I'm messing around with it a bit."
+remote_theme: RMWinslow/just-the-docs-tweaked
+search_enabled: true
+
 logo: "/img/logo.png"
-color_scheme: light
-plugins:
-  - jekyll-redirect-from
+
+
+gh_edit_link: false  # show or hide edit this page link
+
+
+compress_html:
+  ignore:
+    envs: all
