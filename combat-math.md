@@ -102,6 +102,8 @@ Hooded Men
 
 ---
 
+---
+
 <details closed markdown="block">
 <summary>Psst, you wanna see some janky code?</summary>
 ```python
