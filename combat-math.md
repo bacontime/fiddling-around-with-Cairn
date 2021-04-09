@@ -57,6 +57,8 @@ Hooded Men
 - When Bear survives, they're left with an average of 2.36 HP and  13.84 STR
 - When Adventurer survives, they're left with an average of 1.08 HP and  9.95 STR
 
+Given that the adventurer goes first with probability, 11/20, we can expect they win about 54% of the time.
+
 
 ### Root Goblin vs Standard Reference Adventurer
 
@@ -73,6 +75,8 @@ Hooded Men
 - Average number of rounds: 1.82
 - When Goblin survives, they're left with an average of 0.89 HP and  7.12 STR
 - When Adventurer survives, they're left with an average of 1.75 HP and  10.78 STR
+
+We can expect the adventurer wins about 92% of the time.
 
 
 ### Hooded Man vs Standard Reference Adventurerer
@@ -91,6 +95,9 @@ Hooded Men
 - Average number of rounds: 2.66
 - When Hooded Man survives, they're left with an average of 6.24 HP and  8.83 STR
 - When Adventurer survives, they're left with an average of 0.72 HP and  9.45 STR
+
+
+We can expect the adventurer wins about 37% of the time.
 
 
 ### Duel betwixt two Standard Reference Adventurerererererers
