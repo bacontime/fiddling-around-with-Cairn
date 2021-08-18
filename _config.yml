@@ -11,3 +11,7 @@ gh_edit_link: false  # show or hide edit this page link
 compress_html:
   ignore:
     envs: all
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
